@@ -1,0 +1,80 @@
+[
+    {
+        "id": "4109d6bf331fdb85",
+        "type": "tab",
+        "label": "Fluxo 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "99379b9e7b7304a6",
+        "type": "inject",
+        "z": "4109d6bf331fdb85",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "pegou",
+        "payloadType": "str",
+        "x": 210,
+        "y": 140,
+        "wires": [
+            [
+                "ece5ebe57b85241e"
+            ]
+        ]
+    },
+    {
+        "id": "0ef879f0524b5414",
+        "type": "debug",
+        "z": "4109d6bf331fdb85",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "ece5ebe57b85241e",
+        "type": "http request",
+        "z": "4109d6bf331fdb85",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://host.docker.internal:8000/api/cidades",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 500,
+        "y": 140,
+        "wires": [
+            [
+                "0ef879f0524b5414"
+            ]
+        ]
+    }
+]
