@@ -1,3 +1,5 @@
+Projeto em PHP usando laravel e docker para realizar o CRUD de cidades em um banco de dados. Este projeto foi um desafio de código onde foi requisitado a criação de uma API para realizar um CRUD básico. Foi solicitado também que a aplicação, o banco de dados e sua interface gráfica fossem acessados através de containeres do Docker.
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
